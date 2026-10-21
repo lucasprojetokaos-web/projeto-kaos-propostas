@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta de Projeto — {{CLIENTE}}</title>
+<meta name="description" content="{{DESCRICAO_CURTA}} — {{CLIENTE}}">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../assets/kaos.css">
+<link rel="stylesheet" href="../assets/kaos-componentes.css">
+</head>
+<body>
+<!--
+  MODELO DE PROPOSTA · PROJETO KAOS
+  FIXO     = não mexer no texto nem na estrutura.
+  VARIÁVEL = reescrever para o cliente. Os blocos de exemplo mostram a marcação certa; apague o que não usar.
+  Seções entre 02 e 08 podem ser incluídas, removidas ou reordenadas. Renumere .sec-num em sequência; o contador "00 / N" se ajusta sozinho.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 356 356"><path fill="currentColor" d="M301.69.07h-123.69v-.07H54.54C49.08,30.46,31.57,49.33.07,54.31v123.69h-.07v123.46c30.46,5.47,49.33,22.98,54.31,54.47h123.69v.07h123.46c5.47-30.46,22.98-49.33,54.47-54.31v-123.69h.07V54.54c-30.46-5.47-49.33-22.98-54.31-54.47ZM275.79,206.76c6.28,25.33,13.22,50.54,19.59,75.88,2.78,11.05-1.54,15.46-12.41,12.77-28.68-7.16-57.79-13.16-85.74-22.52-6.77-2.26-13.09-2.92-19.23-2.64v-.24c-9.96.14-19.1,3.41-28.76,5.79-25.33,6.28-50.54,13.22-75.88,19.59-11.05,2.78-15.46-1.54-12.77-12.41,7.16-28.68,13.16-57.79,22.52-85.74,2.26-6.77,2.92-13.09,2.64-19.23h.24c-.14-9.96-3.41-19.1-5.79-28.76-6.28-25.33-13.22-50.54-19.59-75.88-2.78-11.05,1.54-15.46,12.41-12.77,28.68,7.16,57.79,13.16,85.74,22.52,6.77,2.26,13.09,2.92,19.23,2.64v.24c9.96-.14,19.1-3.41,28.76-5.79,25.33-6.28,50.54-13.22,75.88-19.59,11.05-2.78,15.46,1.54,12.77,12.41-7.16,28.68-13.16,57.79-22.52,85.74-2.26,6.77-2.92,13.09-2.64,19.23h-.24c.14,9.96,3.41,19.1,5.79,28.76Z"/></symbol></svg>
+
+<div class="page">
+<main>
+
+  <!-- CAPA · estrutura FIXA, textos VARIÁVEIS -->
+  <section class="cover" data-sec>
+    <div class="cover-bg"></div>
+    <div class="cover-inner">
+      <div class="brand rv"><svg class="cover-mark" aria-hidden="true"><use href="#mark"/></svg><span class="label muted">Proposta de projeto</span></div>
+      <h1 class="d1 rv">{{TITULO_CAPA}}</h1>
+      <p class="bl muted rv">{{LEAD_CAPA}}</p>
+      <div class="meta rv">
+        <div><div class="label">Cliente</div><p>{{CLIENTE}}</p></div>
+        <div><div class="label">A/C</div><p>{{CONTATO_NOME}} — {{CONTATO_CARGO}}</p></div>
+        <div><div class="label">Período</div><p>{{DATA_INICIO}} — {{DATA_FIM}}</p></div>
+        <div><div class="label">Responsáveis</div><p>{{RESPONSAVEIS}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 QUEM CONDUZ · FIXO (só o subtítulo pode mudar para conversar com o projeto) -->
+  <section id="quem" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">01</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">Quem conduz</h2>
+        <p class="rv">{{SUBTITULO_QUEM}}</p>
+      </div>
+    </div>
+    <div class="grid g2 rv">
+      <div class="cell person">
+        <div class="person-id">
+          <img src="../fotos/joao-luz.jpg" alt="Retrato de João Luz" width="320" height="320">
+          <div>
+            <div class="t1">João Luz</div>
+            <div class="sm">Estratégia &amp; Direção de Marca</div>
+          </div>
+        </div>
+        <p class="bl">Formado em marketing, com mais de 5 anos no mercado criativo, atualmente integra o time da Asoma, uma das principais consultorias de branding do país. Responsável pela direção estratégica e visual do projeto.</p>
+      </div>
+      <div class="cell bone person">
+        <div class="person-id">
+          <img src="../fotos/lucas-dato.jpg" alt="Retrato de Lucas Dato" width="320" height="320">
+          <div>
+            <div class="t1">Lucas Dato</div>
+            <div class="sm">Performance &amp; Automação</div>
+          </div>
+        </div>
+        <p class="bl">Estudante de Marketing pela Fatec Sebrae, trabalhou na Canastra Ventures, onde desenvolveu projetos inovadores e marcantes para a empresa. Com um forte viés empreendedor, lidera ao lado do João o Projeto Kaos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 MOMENTO DO CLIENTE · VARIÁVEL (situação atual: história, números, o que motivou o projeto) -->
+  <section id="contexto" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">02</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">O momento da {{CLIENTE}}.</h2>
+      </div>
+    </div>
+    <div class="split rv">
+      <p class="sm aside">{{RESUMO_UMA_FRASE}}</p>
+      <div class="bd">
+        <p>{{PARAGRAFO}}</p>
+        <p>{{PARAGRAFO}}</p>
+      </div>
+    </div>
+    <div class="concept rv">
+      <p class="t2">{{FRASE_CONCEITO}}</p>
+    </div>
+  </section>
+
+  <!-- 03 DOR · VARIÁVEL (justificativa: o problema em 2 a 4 itens) -->
+  <section id="dor" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">03</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">{{TITULO_DOR}}</h2>
+      </div>
+    </div>
+    <div class="grid g2 rv"><!-- use g3 para 3 itens -->
+      <div class="cell pain">
+        <span class="num">01</span>
+        <h3 class="t2">{{DOR_TITULO}}</h3>
+        <p class="bd muted">{{DOR_TEXTO}}</p>
+      </div>
+      <div class="cell pain">
+        <span class="num">02</span>
+        <h3 class="t2">{{DOR_TITULO}}</h3>
+        <p class="bd muted">{{DOR_TEXTO}}</p>
+      </div>
+    </div>
+    <div class="concept rv">
+      <p class="t2">{{FRASE_CONCEITO}}</p>
+    </div>
+  </section>
+
+  <!-- 04 OBJETIVO E SOLUÇÃO · VARIÁVEL (objetivo SMART + frentes/entregas, com "fora do escopo") -->
+  <section id="objetivo" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">04</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">{{TITULO_OBJETIVO}}</h2>
+        <p class="rv">{{OBJETIVO_EM_UMA_FRASE}}</p>
+      </div>
+    </div>
+    <div class="fronts">
+      <article class="card rv">
+        <div>
+          <span class="label">Frente 01</span>
+          <h3 class="t2">{{FRENTE_TITULO}}</h3>
+          <p class="bd intro">{{FRENTE_INTRO}}</p>
+        </div>
+        <div class="rows">
+          <div class="row"><div class="label">{{ENTREGA}}</div><p class="bd">{{DESCRICAO}}</p></div>
+          <div class="row"><div class="label">{{ENTREGA}}</div><p class="bd">{{DESCRICAO}}</p></div>
+        </div>
+      </article>
+    </div>
+    <div class="smart rv" aria-label="Objetivo SMART">
+      <div><span class="label">Específico</span><p class="sm">{{S}}</p></div>
+      <div><span class="label">Mensurável</span><p class="sm">{{M}}</p></div>
+      <div><span class="label">Atingível</span><p class="sm">{{A}}</p></div>
+      <div><span class="label">Relevante</span><p class="sm">{{R}}</p></div>
+      <div><span class="label">Temporal</span><p class="sm">{{T}}</p></div>
+    </div>
+    <div class="note rv">
+      <span class="label">Fora do escopo</span>
+      <p class="bd muted">{{FORA_DO_ESCOPO}}</p>
+    </div>
+  </section>
+
+  <!-- 05 ETAPAS · VARIÁVEL (fluxograma em fases; caixa .gate = marco de aprovação do cliente; .ext = depende de terceiro/plataforma) -->
+  <section id="etapas" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">05</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">{{TITULO_ETAPAS}}</h2>
+        <p class="rv">{{SUBTITULO_ETAPAS}}</p>
+      </div>
+    </div>
+    <div class="flow-wrap rv">
+      <div class="flow" role="img" aria-label="Fluxograma: {{FASES_EM_TEXTO}}">
+
+        <div class="phase">
+          <div class="phase-id"><span class="label">Fase 1 · {{QUANDO}}</span><span class="h1">Iniciação</span><span class="cap">{{O_QUE_A_FASE_FAZ}}</span></div>
+          <div class="steps">
+            <div class="box"><span class="code">1.1</span><span class="h1">Reunião de imersão</span><span class="cap">{{DETALHE}}</span></div>
+            <div class="harrow"></div>
+            <div class="box"><span class="code">1.2</span><span class="h1">Acessos e materiais</span><span class="cap">{{DETALHE}}</span></div>
+            <div class="harrow"></div>
+            <div class="box gate"><span class="code">Marco</span><span class="h1">Abertura aprovada</span><span class="cap">{{DETALHE}}</span></div>
+          </div>
+        </div>
+        <div class="vlink"><span></span><span></span></div>
+
+        <!-- Fase com duas frentes em paralelo: troque o vlink acima por <div class="vlink split2"><span></span><span><i></i><i></i></span></div>
+        <div class="phase">
+          <div class="phase-id"><span class="label">Fase 3 · {{QUANDO}}</span><span class="h1">Execução</span><span class="cap">Duas frentes em paralelo</span></div>
+          <div class="flow-fronts">
+            <div class="flow-front">
+              <span class="label">Frente A · {{NOME}}</span>
+              <div class="chain">
+                <div class="box"><span class="code">A.1</span><span class="h1">{{ETAPA}}</span><span class="cap">{{DETALHE}}</span></div>
+                <div class="down"></div>
+                <div class="box ext"><span class="code">A.2 · {{PLATAFORMA}}</span><span class="h1">{{ETAPA}}</span><span class="cap">{{DETALHE}}</span></div>
+              </div>
+            </div>
+            <div class="flow-front">
+              <span class="label">Frente B · {{NOME}}</span>
+              <div class="chain">
+                <div class="box"><span class="code">B.1</span><span class="h1">{{ETAPA}}</span><span class="cap">{{DETALHE}}</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vlink split2"><span></span><span><i></i><i></i></span></div>
+        -->
+
+        <div class="phase">
+          <div class="phase-id"><span class="label">Fase N · {{QUANDO}}</span><span class="h1">Encerramento</span><span class="cap">Entrega e aceite</span></div>
+          <div class="steps">
+            <div class="box"><span class="code">N.1</span><span class="h1">{{ENTREGA_FINAL}}</span><span class="cap">{{DETALHE}}</span></div>
+            <div class="harrow"></div>
+            <div class="box gate"><span class="code">Marco</span><span class="h1">Aceite final</span><span class="cap">Entrega de acessos e encerramento</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="legend rv">
+      <span><i></i>Etapa conduzida pelo projeto</span>
+      <span><i class="e"></i>Depende de {{TERCEIRO_OU_PLATAFORMA}}</span><!-- remova se não houver -->
+      <span><i class="g"></i>Marco de aprovação da {{CLIENTE}}</span>
+    </div>
+    <!-- FIXO -->
+    <div class="note rv">
+      <span class="label">Rodada de revisões</span>
+      <p class="bd muted">Cada entrega contempla até 2 (duas) rodadas de ajustes incluídas. Alterações após a aprovação formal ou mudanças de escopo são orçadas à parte, mediante aditivo — regra que protege o cronograma dos dois lados.</p>
+    </div>
+  </section>
+
+  <!-- 06 CRONOGRAMA · VARIÁVEL (linhas .ms = marcos; datas já descontando feriados) -->
+  <section id="cronograma" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">06</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">{{TITULO_CRONOGRAMA}}</h2>
+        <!-- FIXO, só troque cliente e dias -->
+        <p class="rv">Prazos consideram retorno da {{CLIENTE}} em até {{DIAS_RETORNO}} dias úteis a cada ponto de aprovação. Atrasos na validação deslocam o cronograma em igual período, sem alteração de valores.</p>
+      </div>
+    </div>
+    <div class="table-wrap rv">
+      <table class="table">
+        <thead><tr><th>Período</th><th>Fase</th><th>Entregas</th></tr></thead>
+        <tbody>
+          <tr><td>{{PERIODO}}</td><td>01 — {{FASE}}</td><td>{{ENTREGAS}}</td></tr>
+          <tr class="ms"><td>{{DATA}}</td><td>Marco</td><td>{{MARCO}}</td></tr>
+          <tr><td>{{PERIODO}}</td><td>02 — {{FASE}}</td><td>{{ENTREGAS}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 07 PREMISSAS, RESTRIÇÕES E RISCOS · VARIÁVEL (acesso a contas do cliente SEMPRE explícito aqui, quando houver) -->
+  <section id="riscos" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">07</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">O que precisa ser verdade para dar certo.</h2>
+        <p class="rv">Premissas, restrições e riscos levantados antes do início, para que o prazo não dependa de surpresas.</p>
+      </div>
+    </div>
+    <div class="grid g2 rv">
+      <div class="cell">
+        <span class="label">Premissas</span>
+        <ul class="list">
+          <li><b>{{PREMISSA}}.</b> {{DETALHE}}</li>
+          <li><b>Aprovações.</b> Retorno da {{CLIENTE}} em até {{DIAS_RETORNO}} dias úteis em cada marco.</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <span class="label">Restrições</span>
+        <ul class="list">
+          <li><b>Escopo.</b> {{ONDE_O_PROJETO_TERMINA}}</li>
+          <li><b>{{RESTRICAO}}.</b> {{DETALHE}}</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:var(--s7)" class="rv">
+      <span class="label" style="color:var(--steel);display:block;margin-bottom:var(--s4)">Principais riscos</span>
+      <div class="risk">
+        <div><p class="h1">{{RISCO}}</p><p class="bd">{{CAUSA_E_IMPACTO}}</p></div>
+        <p class="resp">{{RESPOSTA}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 INVESTIMENTO · apresentação FIXA, valores e regras de pagamento VARIÁVEIS -->
+  <section id="investimento" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">08</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">{{TITULO_INVESTIMENTO}}</h2>
+        <p class="rv">{{SUBTITULO_INVESTIMENTO}}</p>
+      </div>
+    </div>
+    <div class="grid g2 rv">
+      <div class="cell plan">
+        <span class="tag">Plano único</span>
+        <h3 class="t2">Projeto {{CLIENTE}} {{ANO}}</h3>
+        <p class="sm">Tudo o que está incluído no escopo contratado.</p>
+        <div class="inc">{{ITEM_INCLUSO}}</div>
+        <div class="inc">{{ITEM_INCLUSO}}</div>
+      </div>
+      <div class="price-cell">
+        <div class="price-block">
+          <div class="label">{{NOME_DO_VALOR}}</div>
+          <div class="price">R$ {{VALOR}}</div>
+          <p class="cap">{{CONDICAO_DE_PAGAMENTO}}</p>
+        </div>
+        <!-- segundo bloco opcional (fee mensal):
+        <div class="price-block">
+          <div class="label">Operação mensal — fee</div>
+          <div class="price">R$ {{VALOR}} <small>/ mês</small></div>
+          <p class="cap">{{CONDICAO}}</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="grid g2 rv" style="margin-top:var(--s6)">
+      <div class="cell extra">
+        <div class="label">Extensão</div>
+        <h3 class="t2">R$ {{VALOR_EXTENSAO}} / mês</h3>
+        <p class="bd muted">{{O_QUE_A_EXTENSAO_COBRE}}</p>
+      </div>
+      <div class="cell extra">
+        <div class="label">Não incluso</div>
+        <h3 class="t2">{{NAO_INCLUSO_TITULO}}</h3>
+        <p class="bd muted">{{NAO_INCLUSO_TEXTO}}</p>
+      </div>
+    </div>
+    <!-- FIXO -->
+    <div class="note rv" style="margin-top:var(--s7)">
+      <span class="label">Condições comerciais</span>
+      <p class="bd muted">Valores líquidos, com nota fiscal emitida pela contratada. Sem reajuste dentro da vigência. Licenças, ferramentas de terceiros, créditos de API, bancos de imagem e produção externa não estão inclusos e dependem de aprovação prévia por escrito. Proposta válida por 15 dias.</p>
+    </div>
+  </section>
+
+  <!-- 09 CONTRATO · cláusulas FIXAS com variáveis; [SE ...] = incluir só quando se aplica. Renumere em sequência. -->
+  <section id="contrato" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">09</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">O que o contrato vai prever.</h2>
+        <p class="rv">Resumo dos pontos que estruturam o instrumento definitivo, a ser assinado digitalmente via Adobe Sign.</p>
+      </div>
+    </div>
+    <div class="clauses">
+      <div class="clause rv"><span class="num">01</span><h3 class="h1">Objeto e escopo</h3><p class="bd">Prestação de serviços de {{SERVICOS}}, conforme escopo detalhado nesta proposta, que integra o contrato como anexo.</p></div>
+      <div class="clause rv"><span class="num">02</span><h3 class="h1">Prazo e vigência</h3><p class="bd">Início em {{DATA_INICIO}} e término da execução em {{DATA_FIM}}, prorrogável por aditivo.{{FRASE_PAGAMENTOS_APOS_FIM}}</p></div>
+      <!-- [SE houver etapa que depende de terceiro ou plataforma] -->
+      <div class="clause rv"><span class="num">03</span><h3 class="h1">Prazos de terceiros</h3><p class="bd">Etapas que dependem de análise de {{TERCEIRO_OU_PLATAFORMA}} seguem os prazos dessas partes. Quando excederem o previsto, o cronograma é estendido em igual período, sem alteração de valores e sem caracterizar atraso da contratada.</p></div>
+      <!-- [SE houver mídia, automação ou operação em plataforma] -->
+      <div class="clause rv"><span class="num">04</span><h3 class="h1">Obrigação de meio</h3><p class="bd">{{SERVICOS_DE_MEIO}} constituem obrigação de meio, não de resultado. Diligência técnica e melhores práticas, sem garantia de faturamento, conversão ou posicionamento — que dependem de preço, estoque, atendimento comercial e políticas das plataformas.</p></div>
+      <!-- [SE houver criação: marca, identidade, peças, textos] -->
+      <div class="clause rv"><span class="num">05</span><h3 class="h1">Propriedade intelectual</h3><p class="bd">Cessão total, definitiva e irrevogável dos direitos patrimoniais sobre {{O_QUE_E_CEDIDO}} aprovado, condicionada à quitação integral. Direitos morais permanecem com os autores (Lei 9.610/98). Alternativas não aprovadas não são cedidas.</p></div>
+      <!-- [SE o projeto opera contas do cliente] -->
+      <div class="clause rv"><span class="num">06</span><h3 class="h1">Titularidade de contas</h3><p class="bd">{{CONTAS}} são de titularidade exclusiva da {{CLIENTE}}. A contratada atua por acesso delegado e, ao término, devolve acessos e entrega o que foi configurado documentado, sem trava técnica.</p></div>
+      <!-- [SE usar IA na produção ou gestão] -->
+      <div class="clause rv"><span class="num">07</span><h3 class="h1">Uso de inteligência artificial</h3><p class="bd">Ciência do uso de IA na produção de conteúdo e gestão de campanhas, com revisão humana obrigatória antes de qualquer publicação. A contratada não responde por decisões automatizadas das plataformas ou mudanças em suas políticas e APIs.</p></div>
+      <div class="clause rv"><span class="num">08</span><h3 class="h1">Proteção de dados — LGPD</h3><p class="bd">{{CLIENTE}} como controladora; contratada como operadora, tratando dados apenas conforme instruções. Medidas de segurança, comunicação de incidentes em até 48 horas e eliminação ou devolução dos dados ao término.</p></div>
+      <div class="clause rv"><span class="num">09</span><h3 class="h1">Confidencialidade</h3><p class="bd">Sigilo recíproco sobre informações comerciais, custo, margem, estoque e fornecedores, durante o contrato e por 3 anos após. Uso do case em portfólio autorizado, com omissão de dados sensíveis a critério da contratante.</p></div>
+      <div class="clause rv"><span class="num">10</span><h3 class="h1">Não aliciamento</h3><p class="bd">As partes não contratarão diretamente profissionais alocados no projeto pela outra parte, durante a vigência e por 12 meses após o término, salvo consentimento por escrito.</p></div>
+      <div class="clause rv"><span class="num">11</span><h3 class="h1">Inadimplemento e suspensão</h3><p class="bd">Atraso superior a 10 dias autoriza a suspensão dos serviços e a retenção de entregas não quitadas, sem caracterizar inadimplemento da contratada. Multa de 2%, juros de 1% ao mês e correção pelo IPCA.</p></div>
+      <div class="clause rv"><span class="num">12</span><h3 class="h1">Rescisão</h3><p class="bd">Imotivada, com aviso prévio de 30 dias e pagamento das etapas concluídas e proporcional das em curso.{{MULTA_RESCISAO_OPCIONAL}}</p></div>
+      <div class="clause rv"><span class="num">13</span><h3 class="h1">Assinatura e foro</h3><p class="bd">Assinatura eletrônica via Adobe Sign, com validade reconhecida nos termos do art. 10, §2º, da MP 2.200-2/2001 e da Lei 14.063/2020. Foro da Comarca de São Paulo/SP. Esta proposta, aprovada, integra o contrato como Anexo I.</p></div>
+    </div>
+  </section>
+
+  <!-- 10 PRÓXIMOS PASSOS · estrutura FIXA, datas VARIÁVEIS -->
+  <section id="passos" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">10</div>
+      <div class="sec-title">
+        <h2 class="t1 rv">Aprovando a proposta, começamos assim.</h2>
+      </div>
+    </div>
+    <div class="grid g4 rv">
+      <div class="cell step"><div class="label">01</div><p class="h1">Aprovação da proposta e envio dos dados para documentação</p></div>
+      <div class="cell step"><div class="label">02</div><p class="h1">Assinatura do contrato via Adobe Sign</p></div>
+      <div class="cell step"><div class="label">03</div><p class="h1">{{PAGAMENTO_INICIAL}} e envio dos acessos e materiais</p></div>
+      <div class="cell step"><div class="label">04</div><p class="h1">Reunião de imersão — {{DATA_IMERSAO}}</p></div>
+    </div>
+  </section>
+
+  <!-- 11 ENCERRAMENTO · FIXO (contatos confirmados a cada proposta) -->
+  <section id="contato" class="closing" data-sec>
+    <div class="sec-head">
+      <div class="sec-num">11</div>
+      <div class="sec-title">
+        <span class="label" style="color:var(--steel)">Encerramento</span>
+      </div>
+    </div>
+    <h2 class="d2 rv">Estamos prontos para construir isso com vocês.</h2>
+    <p class="bl rv">Qualquer ponto de escopo, prazo ou condição comercial pode ser ajustado antes da assinatura. Estamos à disposição para uma conversa de alinhamento.</p>
+    <a href="{{LINK_WHATSAPP}}" target="_blank" rel="noopener" class="btn rv">Vamos começar <span class="arw">→</span></a>
+    <div class="contacts rv">
+      <div><div class="label">Telefone</div><a href="tel:+55{{TELEFONE_SO_DIGITOS}}">{{TELEFONE}}</a></div>
+      <div><div class="label">E-mail</div><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></div>
+      <div><div class="label">Instagram</div><a href="https://instagram.com/{{INSTAGRAM_SEM_ARROBA}}" target="_blank" rel="noopener">@{{INSTAGRAM_SEM_ARROBA}}</a></div>
+      <!-- outras redes no mesmo formato, se houver -->
+      <div><div class="label">CNPJ</div><p>{{CNPJ}}</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="cap">{{RESPONSAVEIS}} · Proposta {{CLIENTE}} · {{MES_ANO}}</div>
+    <div class="cap">Documento confidencial</div>
+  </footer>
+
+</main>
+</div>
+
+<div class="hud" aria-hidden="true">
+  <div class="keys"><kbd>↑</kbd><kbd>↓</kbd></div>
+  <div class="counter" id="counter">00 / 11</div>
+</div>
+
+<script src="../assets/kaos.js"></script>
+</body>
+</html>
